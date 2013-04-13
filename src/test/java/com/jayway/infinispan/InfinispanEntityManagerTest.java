@@ -14,7 +14,7 @@ import org.junit.Test;
 
 import static org.fest.assertions.api.Assertions.assertThat;
 
-public class InfinispanCacheWrapperTest {
+public class InfinispanEntityManagerTest {
 
     private InfinispanEntityManager cache;
     DefaultCacheManager cacheManager = new DefaultCacheManager();
