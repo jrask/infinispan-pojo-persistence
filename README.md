@@ -1,12 +1,14 @@
-#Introduction
+#Infinispan object to graph mapper
 
 Simplfies storage of POJOs in infinispan using JPA annotations.
 
 ## Goal
 
-Adding pojos to infinispan should be simple
+More lightweight than hibernate-ogm
 
-No external configuration
+Should be as simple as possible
+
+No external configuration (yet...)
 
 Minimal performance overhead
 
@@ -25,7 +27,7 @@ Minimal performance overhead
 
 ## Usage
 
-Person person = new Person("someid);
+Person person = new Person("someid",new Address("Home"));
 InfinispanEntityManager.persist(person);
 
 Person person = InfinispanEntityManager.find("someId",Person.class);
@@ -34,9 +36,10 @@ Person person = InfinispanEntityManager.find("someId",Person.class);
 
 Java serialization
 
-AtomicHashMap & FineGrainedAtomicHashMap
+DeltaAware support with AtomicHashMap & FineGrainedAtomicHashMap
 
 
 ## TODO
 
 Support for Embedded Iterable
+Support for secondary id´s
