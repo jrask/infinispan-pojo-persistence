@@ -8,7 +8,8 @@ Adding pojos to infinispan should be simple
 
 No external configuration
 
-Minimal overhead
+Minimal performance overhead
+
 
 ## Supported annotations
 
@@ -35,3 +36,7 @@ Java serialization
 
 AtomicHashMap & FineGrainedAtomicHashMap
 
+
+## TODO
+
+Support for Embedded Iterable
