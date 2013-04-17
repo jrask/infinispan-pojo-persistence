@@ -1,6 +1,6 @@
-package com.jayway.infinispan.simplejpa.serializer;
+package com.jayway.infinispan.o2gm.serialization;
 
-import com.jayway.infinispan.simplejpa.Serializer;
+import com.jayway.infinispan.o2gm.Serializer;
 import org.infinispan.Cache;
 import org.infinispan.manager.CacheContainer;
 

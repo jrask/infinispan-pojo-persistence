@@ -1,7 +1,7 @@
-package com.jayway.infinispan.simplejpa;
+package com.jayway.infinispan.o2gm;
 
-import com.jayway.infinispan.simplejpa.serializer.atomicmap.AtomicHashMapFactory;
-import com.jayway.infinispan.simplejpa.serializer.atomicmap.AtomicMapSerializer;
+import com.jayway.infinispan.o2gm.serialization.atomicmap.AtomicHashMapFactory;
+import com.jayway.infinispan.o2gm.serialization.atomicmap.AtomicMapSerializer;
 import org.infinispan.manager.CacheContainer;
 
 
@@ -31,6 +31,7 @@ public class InfinispanEntityManager {
     }
 
     public <T> T find(Object key, Class<T> clazz) {
+
         return (T) serializer.deserialize(key, clazz);
     }
 }

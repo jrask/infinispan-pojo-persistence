@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.jayway.infinispan</groupId>
-  <artifactId>infinispan-simplejpa</artifactId>
+  <artifactId>infinispan-o2gm-lite</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>infinispan-simplejpa</name>
+  <name>infinispan-o2gm-lite</name>
   <url>http://maven.apache.org</url>
 
   <properties>

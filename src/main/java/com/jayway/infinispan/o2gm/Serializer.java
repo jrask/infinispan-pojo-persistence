@@ -1,4 +1,4 @@
-package com.jayway.infinispan.simplejpa;
+package com.jayway.infinispan.o2gm;
 
 /**
  * <p>Responsible for serializing an entity into a serialized form</p>

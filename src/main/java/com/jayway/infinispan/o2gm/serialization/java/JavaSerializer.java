@@ -1,7 +1,7 @@
-package com.jayway.infinispan.simplejpa.serializer.java;
+package com.jayway.infinispan.o2gm.serialization.java;
 
-import com.jayway.infinispan.simplejpa.Serialized;
-import com.jayway.infinispan.simplejpa.serializer.AbstractSerializer;
+import com.jayway.infinispan.o2gm.Serialized;
+import com.jayway.infinispan.o2gm.serialization.AbstractSerializer;
 import com.rits.cloning.Cloner;
 import org.infinispan.manager.CacheContainer;
 
@@ -46,7 +46,6 @@ public class JavaSerializer extends AbstractSerializer {
     }
 
     void clearTransientValues(final Object entity) {
-        System.out.println("clear");
         try {
             filter(entity.getClass().getDeclaredFields(),new EnableFieldAccessCommand<Void>() {
                 @Override
@@ -54,7 +53,6 @@ public class JavaSerializer extends AbstractSerializer {
                     super.apply(field);
                     System.out.println(field);
                     if(field.getAnnotation(Transient.class) != null) {
-                        System.out.println("nulling field " + field);
                         setField(field,null,entity);
                     } else if (field.getAnnotation(Embedded.class) != null) {
                         clearTransientValues(field.get(entity));

@@ -1,4 +1,4 @@
-package com.jayway.infinispan.simplejpa.serializer.atomicmap;
+package com.jayway.infinispan.o2gm.serialization.atomicmap;
 
 import org.infinispan.Cache;
 import org.infinispan.atomic.AtomicMap;

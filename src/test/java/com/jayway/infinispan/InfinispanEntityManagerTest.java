@@ -1,10 +1,10 @@
 package com.jayway.infinispan;
 
-import com.jayway.infinispan.simplejpa.serializer.atomicmap.AtomicHashMapFactory;
-import com.jayway.infinispan.simplejpa.serializer.atomicmap.AtomicMapSerializer;
-import com.jayway.infinispan.simplejpa.serializer.java.JavaSerializer;
-import com.jayway.infinispan.simplejpa.InfinispanEntityManager;
-import com.jayway.infinispan.simplejpa.Serializer;
+import com.jayway.infinispan.o2gm.serialization.atomicmap.AtomicHashMapFactory;
+import com.jayway.infinispan.o2gm.serialization.atomicmap.AtomicMapSerializer;
+import com.jayway.infinispan.o2gm.serialization.java.JavaSerializer;
+import com.jayway.infinispan.o2gm.InfinispanEntityManager;
+import com.jayway.infinispan.o2gm.Serializer;
 import org.infinispan.configuration.cache.ConfigurationBuilder;
 import org.infinispan.manager.DefaultCacheManager;
 import org.infinispan.transaction.TransactionMode;

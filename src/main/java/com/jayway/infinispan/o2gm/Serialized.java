@@ -1,4 +1,4 @@
-package com.jayway.infinispan.simplejpa;
+package com.jayway.infinispan.o2gm;
 
 /**
  * <p>Represents an object in serialized form</p>
